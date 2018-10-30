@@ -1,0 +1,45 @@
+{
+  "name": "webpack-multiple-entries",
+  "version": "0.1.0",
+  "description": "webpack多入口文件页面打包配置",
+  "main": "index.js",
+  "dependencies": {
+    "postcss-safe-parser": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-dev-server  --mode development --inline --progress --config build/webpack.dev.js",
+    "build": "webpack  --mode production --config build/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natee/webpack-multiple-entries.git"
+  },
+  "keywords": [
+    "webpack",
+    "multiple",
+    "entries",
+    "pages",
+    "多入口",
+    "多页面"
+  ],
+  "homepage": "https://github.com/natee/webpack-multiple-entries#readme",
+  "author": "Zhao Ke <kerncink@gmail.com>",
+  "license": "MIT"
+}

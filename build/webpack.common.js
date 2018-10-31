@@ -14,7 +14,7 @@ const pageExtractCssArray = []
 entries.forEach(item => {
   pageExtractCssArray.push(
     new ExtractTextPlugin({
-      filename: utils.assetsPath(item + '/css/app.[md5:contenthash:hex:7].css'),
+      filename: utils.assetsPath(item, '/css/app.[md5:contenthash:hex:7].css'),
     })
   )
 })
@@ -46,8 +46,8 @@ let webpackConfig = {
   ],
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: utils.assetsPath('[name]/js/app.[hash:7].js'),
-    chunkFilename: utils.assetsPath('[name]/js/[id].[hash:7].js'),
+    filename: utils.assetsPath('[name]','js/app.[hash:7].js'),
+    chunkFilename: utils.assetsPath('[name]','js/[id].[hash:7].js'),
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
@@ -71,7 +71,7 @@ entries.forEach((item, i) => {
       loader: 'url-loader',
       options: {
         limit: 10,
-        name: utils.assetsPath(item + '/img/[name].[hash:7].[ext]'),
+        name: utils.assetsPath(item, 'img/[name].[hash:7].[ext]'),
       }
     },
     {

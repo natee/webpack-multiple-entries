@@ -1,6 +1,6 @@
 const glob = require("glob");
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const config = require('./config')
 
 exports.getEntry = function () {
   let globPath = 'src/**/js/index.js'
@@ -26,5 +26,9 @@ exports.addEntry = function () {
 }
 
 exports.assetsPath = function (_path) {
-  return path.posix.join('/', _path)
+  const assetsSubDirectory = process.env.NODE_ENV === 'production'
+    ? config.build.assetsSubDirectory
+    : config.dev.assetsSubDirectory
+
+  return path.posix.join(assetsSubDirectory, _path)
 }

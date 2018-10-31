@@ -24,3 +24,7 @@ exports.addEntry = function () {
   });
   return entryObj
 }
+
+exports.assetsPath = function (_path) {
+  return path.posix.join('/', _path)
+}

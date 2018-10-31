@@ -5,7 +5,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   devServer: {
-    contentBase: '../dist',
+    // contentBase: '../dist',
     hot: true
   },
   module: {

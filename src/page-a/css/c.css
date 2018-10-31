@@ -17,3 +17,9 @@ html, body {
   height: 100%;
 }
 
+.bg{
+  background: url('../img/a.png') 0 0 repeat;
+  background-color: #f6b5fb;
+  width: 200px;
+  height: 200px;
+}

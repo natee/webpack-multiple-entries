@@ -75,7 +75,7 @@ entries.forEach((item, i) => {
       test: new RegExp('src' + '(\\\\|\/)' + item + '(\\\\|\/)' + 'img' + '(\\\\|\/)' + '.*\.(png|jpe?g|gif|svg)$'),
       loader: 'url-loader',
       options: {
-        limit: 100,
+        limit: 10000,
         name: 'img/[name].[hash:7].[ext]',
         outputPath: '../' + item + '/static',
         // name: '../' + item + '/static/img/[name].[hash:7].[ext]',

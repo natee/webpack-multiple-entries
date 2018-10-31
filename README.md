@@ -8,12 +8,16 @@ src
 ├── page-a
 │   ├── css
 │   │   └── c.css
+│   ├── img
+│   │   └── a.png
 │   ├── index.html
 │   └── js
 │       └── index.js
 └── page-b
     ├── css
     │   └── c.css
+    ├── img
+    │   └── b.png
     ├── index.html
     └── js
         └── index.js
@@ -26,18 +30,20 @@ dist
 │   ├── index.html
 │   └── static
 │       ├── css
-│       │   └── app.797115d.css
+│       │   └── app.1891fe9.css
+│       ├── img
+│       │   └── a.1cea1ff.png
 │       └── js
-│           ├── app.666173e.js
-│           └── app.a72e6a.js
+│           └── app.088f234.js
 └── page-b
     ├── index.html
     └── static
         ├── css
         │   └── app.42dff58.css
+        ├── img
+        │   └── b.1cea1ff.png
         └── js
-            ├── app.666173e.js
-            └── app.a72e6a.js
+            └── app.088f234.js
 ```
 
 ## 开发
